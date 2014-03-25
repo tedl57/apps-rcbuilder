@@ -1,6 +1,6 @@
 <?php // 2014-02-01  3:26:29 PM Sat
 @include_once("../../../lib/php/trl/lib_setup.php");
-require_once("/lib/php/trl/oo/pagehtml.php");
+require_once("trl/oo/pagehtml.php");
 
 displayPage();
 exit();
