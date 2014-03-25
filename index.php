@@ -1,4 +1,5 @@
 <?php // 2014-02-01  3:26:29 PM Sat
+@include_once("../../../lib/php/trl/lib_setup.php");
 require_once("/lib/php/trl/oo/pagehtml.php");
 
 displayPage();
@@ -135,17 +136,18 @@ function getHeadLinks()
 {
 	$ret = '
 <link href="app.css" rel="stylesheet" type="text/css" />
+<!--
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
 
 <script type="text/javascript" src="http://localhost/apps/ajaxlaunch/index.js"></script>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
+-->
 <script type="text/javascript" src="/lib/js/jquery/jquery-1.10.2.js"></script>
-
+<!--
 <script type="text/javascript" src="/lib/js/jquery/menu-context2/src/jquery.ui.position.js"></script>
 <script type="text/javascript" src="/lib/js/jquery/menu-context2/src/jquery.contextMenu.js"></script>
 <link href="/lib/js/jquery/menu-context2/src/jquery.contextMenu.css" rel="stylesheet" type="text/css" />
-		
+-->	
 <!-- 1/24/2014 - dled latest jquery ui - customized to have these 5:
 <script src="/lib/js/jquery/ui/jquery.ui.core.js"></script>
 <script src="/lib/js/jquery/ui/jquery.ui.widget.js"></script>
@@ -154,10 +156,11 @@ function getHeadLinks()
 <script src="/lib/js/jquery/ui/jquery.ui.droppable.js"></script>
 -->
 <script src="/lib/js/jquery/ui/jquery-ui-1.10.4.custom.min.js"></script>
-
+<!--
 <script src="/lib/js/jquery/edit-in-line/jquery.editinplace.js"></script>
 
 <script src="/lib/js/thomasfrank.se/sessvars.js" type="text/javascript"></script>
+-->
 ';
 	return $ret;
 }

@@ -29,6 +29,7 @@ div.cell {
 }
 div.button:hover {
 	border: 1px solid red;
+	margin: 0px;
 }
 p.button {
 	margin-left: auto;
